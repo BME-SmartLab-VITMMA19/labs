@@ -41,10 +41,8 @@ gr.Interface(fn=recognize_digit,
              inputs="sketchpad", 
              outputs=output_component,
              title="Digit Sketchpad",
-             description="Draw a digit between 0 and 9.").launch();
+             description="Draw a digit between 0 and 9.").launch(share=True);
 ```
-
-If you add ```share=True``` to launching Gradio (```.launch(share=True)```), then you will also get a unique URL where you can access the content. 
 
 # Running Gradio on your own environment with Docker
 
